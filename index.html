@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Freehand&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3RD I STUDIO</title>
+  <style> .contact-card {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.contact-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #0d47a1; /* deep blue */
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+}
+
+.contact-form button {
+  background-color: #000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #444;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+      .logo-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.rounded-logo {
+  width: 200px; /* or use max-width: 90% for responsive */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.why-choose-card {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.why-heading {
+  color: #007BFF;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  animation: heartbeat 2.5s infinite;
+}
+
+.why-choose-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.05);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+      .gift-card-container {
+  width: 300px;
+  margin: 60px auto;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+  perspective: 1000px;
+  user-select: none;
+}
+
+.gift-box {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  font-size: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.gift-card-container.exploded .gift-box {
+  animation: explode 0.6s forwards;
+}
+
+    /* Your original styles remain unchanged */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3ed;
+      color: #222;
+    }
+
+    .top-strip {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .top-strip span {
+      font-size: 2.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background: linear-gradient(to right, gold, #b8860b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Arial Black', sans-serif;
+    }
+
+  .nav-buttons {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  color: #f5f5dc; /* cream text */
+  border: 2px solid #f5f5dc; /* cream border */
+  border-radius: 20px;
+  padding: 8px 18px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button.active {
+  background-color: #f5f5dc; /* cream background */
+  color: #2c5364; /* contrast text */
+  border-color: #f5f5dc;
+}
+
+.nav-buttons button:hover {
+  background-color: #f5f5dc; /* cream background on hover */
+  color: #2c5364; /* contrast text on hover */
+  box-shadow: 0 0 0px #f5f5dc;
+}
+
+    section {
+      display: none;
+      padding: 40px 20px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+.about-box {
+  font-family: 'Lora', serif;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  background: #ffffff;
+  color: #000; /* 👈 ADD THIS */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+    ..about-box ul{
+  ...
+  color: #000; /* Add this line */
+}
+
+    .about-box li {
+ 
+  color: #000; /* Add this line to force black inside list */
+}
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }.floating-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+..floating-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -5; /* Behind content but above blob */
+  pointer-events: none;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.15;
+  animation: floatShape 20s linear infinite;
+}
+
+.shape.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape.square {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  top: 60%;
+  left: 70%;
+  animation-delay: 5s;
+}
+
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #ffffff;
+  top: 40%;
+  left: 50%;
+  animation-delay: 10s;
+}
+
+@keyframes floatShape {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}/* Default body stays normal (no color override) */
+body {
+  background-color: #0f2027; /* your preferred dark background */
+  font-family: sans-serif;
+}
+
+/* Cream text ONLY for dark sections */
+#about, #contact, #home {
+  color: #f5f5dc;
+}
+
+/* Make sure white cards keep black text */
+.card, .white-card {
+  background-color: white;
+  color: #000; /* force black text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}#get-in-touch {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin: 40px 0 20px;
+  animation: heartbeat 2.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.2);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1);
+  }
+}.floating-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.floating-bg span {
+  position: absolute;
+  display: block;
+  width: 70px;
+  animation: animate 5s linear infinite, pulse 1s ease-in-out infinite;
+ border: 1px solid #ffffff;
+  height: 70px;
+  background: rgba(173, 216, 230, 0.2); /* A soft light teal (like #add8e6) */ /* light teal-blue tone */
+  animation: floatUp 4s linear infinite;
+  border-radius: 40%;
+  bottom: -50px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-1000px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Random positions and delays */
+.floating-bg span:nth-child(1) {
+  left: 10%;
+  animation-delay: 0s;
+}
+.floating-bg span:nth-child(2) {
+  left: 25%;
+  width: 70px;
+  height: 70px;
+  animation-delay: 2s;
+}
+.floating-bg span:nth-child(3) {
+  left: 40%;
+  animation-delay: 4s;
+}
+.floating-bg span:nth-child(4) {
+  left: 55%;
+  width: 55px;
+  height: 55px;
+  animation-delay: 1s;
+}
+.floating-bg span:nth-child(5) {
+  left: 70%;
+  animation-delay: 3s;
+}
+.floating-bg span:nth-child(6) {
+  left: 85%;
+  width: 40px;
+  height: 45px;
+  animation-delay: 5s;
+}.ripple-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.ripple-btn::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ripple-btn:active::after {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 1;
+  animation: ripple 0.6s ease-out;
+}#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 9999;
+  background: transparent;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes explode {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3) rotate(15deg); }
+  100% { transform: scale(0.1); opacity: 0; }
+}
+
+.gift-container {
+  text-align: center;
+  margin: 80px auto;
+  position: relative;
+  z-index: 10;
+}
+
+.gift-box {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(145deg, #FFD700, #FFA500);
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.ribbon {
+  width: 20px;
+  height: 120px;
+  background: #b8860b;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bow {
+  width: 50px;
+  height: 20px;
+  background: #b8860b;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.surprise-text {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+  display: none;
+  font-family: 'Cursive', sans-serif;
+  animation: explodeText 0.8s ease forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.5) rotate(10deg);
+  }
+  100% {
+    transform: scale(0) rotate(-20deg);
+  }
+}
+
+@keyframes explodeText {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+  </style>
+</head>
+<body><div id="loader" style="display: none;"></div>
+<div class="floating-bg">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div><div class="top-strip">
+    <span>3rd EYE STUDIO</span>
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="showSection('home')" class="active">Home</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </div>  
+<div class="logo-container">
+  <img src="https://i.postimg.cc/GhXb05FD/IMG-20250406-162224-360.webp" alt="3RD I STUDIO Logo" class="rounded-logo">
+</div>
+  <section id="home" class="active">
+    <p style="text-align:center; font-size: 32px; font-weight: 900; margin-bottom: 2px; margin-top: 4px;">
+      Tap to play 👇
+    </p>
+    <div class="embed-container">
+  <iframe 
+    src="https://streamable.com/e/wj4mqb?autoplay=1&muted=1" 
+    frameborder="0" 
+    allow="autoplay; fullscreen" 
+    allowfullscreen>
+  </iframe>
+</div><div id="giftBox" class="gift-card-container" style="display: none;">
+  <div class="gift-container">
+  <div class="gift-box" onclick="showSurprise()">
+    <div class="ribbon"></div>
+    <div class="bow"></div>
+  </div>
+  <div class="surprise-text" id="surpriseText">Surprise! 🎉<br>Check out our featured offer!</div>
+</div>
+</div>
+<div class="why-choose-card">
+  <h2 class="why-heading">WHY CHOOSE US</h2>
+  <ul>
+    <li>🎥 Expert-level editing with cinematic effects</li>
+    <li>⏳ Fast delivery without sacrificing quality</li>
+    <li>💡 Creative direction from concept to final cut</li>
+    <li>🎶 Music-synced video reels for high impact</li>
+    <li>📷 Photo edits that truly pop and stand out</li>
+    <li>🤝 Friendly and dedicated team you can trust</li>
+  </ul>
+</div>
+    <div style="text-align: center; margin-top: 30px;">
+      <img src="https://i.postimg.cc/QtXF871r/Untitled-design-1.png" alt="Golden Logo Text" style="max-width: 90%; height: auto;">
+    </div>
+
+    <div class="subtitle">Photo editing | Video production | Short music video creation</div>
+  </section>  
+
+  <section id="about">
+    <h2 style="text-align:center;">About Us</h2>
+    <div class="about-box">
+      Welcome to <strong>3RD I STUDIO</strong>, where we blend creativity with technology. Our services bring out the artistic soul of your visuals:
+      <ul>
+        <li>🎬 Cinematic short videos that tell stories</li>
+        <li>📸 Sharp, professional photo editing</li>
+        <li>🎵 Custom music video production for reels & artists</li>
+        <li>⏱️ Quick turnaround, modern editing techniques</li>
+        <li>🧠 Concept to Completion — all handled in-house</li>
+      </ul>
+      Our visuals don’t just look good — they leave an impression.
+    </div>
+  </section>  
+
+  <section id="contact">
+  <h2 id="get-in-touch">GET IN TOUCH📄</h2>
+
+  <div class="contact-card">
+    <p>Email: <a href="mailto:tripathisarvesh098@gmail.com">tripathisarvesh098@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919235276166">+91 92352 76166</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/third_eye_studio_official" target="_blank">@third_eye_studio_official</a></p>
+
+    <form action="https://formsubmit.co/anchusingh7985@email.com" method="POST" class="contact-form">
+      <input type="text" name="name" required placeholder="Your Name">
+      <input type="email" name="email" required placeholder="Your Email">
+      <textarea name="message" required placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+  <footer>
+    &copy; 2025 3RD I STUDIO. All rights reserved.
+  </footer>  
+
+  <script>
+    function showSection(id) {
+      // Hide all sections
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+
+      // Show the selected section
+      document.getElementById(id).classList.add('active');
+
+      // Update active class on buttons
+      const buttons = document.querySelectorAll('.nav-buttons button');
+      buttons.forEach(btn => {
+        const target = btn.textContent.trim().toLowerCase();
+        btn.classList.toggle('active', target === id);
+      });
+    }
+
+    function sendSMS() {
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+      const phone = document.getElementById('phone').value;
+      const fullMessage = `Name: ${name}%0APhone: ${phone}%0AMessage: ${message}`;
+      const encoded = encodeURIComponent(fullMessage);
+      const whatsappURL = `https://wa.me/919235276166?text=${encoded}`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script><audio id="click-sound" src="https://n.uguu.se/ZcOzZYJN.mp3" preload="auto"></audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('click-sound');
+    if (audio) {
+      audio.currentTime = 0; // rewind to start
+      audio.play().catch(e => {
+        // Some browsers block autoplay until first interaction
+        console.log("Interaction needed before sound can play.");
+      });
+    }
+  });
+</script><script>
+  function showLoader() {
+    const loader = document.getElementById("loader");
+    loader.style.display = "block";
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 1000);
+  }
+</script><script>
+function showSurprise() {
+  const box = document.querySelector('.gift-box');
+  const text = document.getElementById('surpriseText');
+  
+  // Prevent re-animation if already triggered
+  if (text.style.display === 'block') return;
+
+  box.style.animation = 'explode 0.6s ease forwards';
+
+  setTimeout(() => {
+    text.style.display = 'block';
+  }, 600); // Wait for box animation to finish
+}
+</script>
+</body>
+</html>
