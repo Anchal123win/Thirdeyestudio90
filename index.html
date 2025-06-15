@@ -8,7 +8,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3RD I STUDIO</title>
-  <style> .contact-card {
+  <style>.contact-wrapper {
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+       .contact-card {
   background-color: #fff;
   padding: 30px;
   max-width: 700px;
@@ -164,7 +171,7 @@
 
     .top-strip {
       background-color: black;
-      padding: 20px;
+      padding: 5px;
       text-align: center;
     }
 
@@ -603,7 +610,232 @@ body {
     transform: scale(1);
   }
 }
-  </style>
+.payment-wrapper {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  background: transparent; /* Keeps background clear */
+}
+
+.payment-container {
+  margin-left: 2px;
+  margin-right: 50px;
+
+  
+  
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.payment-container h2 {
+  color: #1a1a1a;
+  font-size: 32px;           /* Reduced from 40px */
+  font-weight: 800;
+  line-height: 1.2;          /* Tighter line height */
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 0px 2px 4px rgba(128, 0, 0, 0.3);  /* faded maroon */
+  white-space: nowrap;       /* ✅ Prevents it from wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.payment-container .price-details p {
+  color: #333;
+  margin: 8px 0;
+}
+
+.payment-container .price-details strong {
+  color: #2c5364;
+}
+
+.payment-container .calculator {
+  margin-top: 20px;
+}
+
+.payment-container label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555; /* Softer gray for subtlety */
+}
+
+.payment-container select,
+.payment-container input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  color: #2c5364;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.payment-container button,
+.payment-container .pay-btn {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  background: #2c5364;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.payment-container button:hover,
+.payment-container .pay-btn:hover {
+  background: #0f2027;
+}
+
+.payment-container .total {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c5364;
+  margin-top: 15px;
+} .step-guide {
+  text-align: left;
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #2c5364;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(44, 83, 100, 0.1);
+  font-size: 16px;
+  color: #2c5364 !important;  /* Force proper text color */
+}
+
+.step-guide h3 {
+  color: #800000; !important;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.step-guide ol {
+  padding-left: 18px;
+  margin: 0;
+  color: #2c5364 !important;
+}
+
+.step-guide li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #2c5364 !important;
+}
+
+.upload-link,
+.whatsapp-link {
+  color: #007bff !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.upload-link:hover,
+.whatsapp-link:hover {
+  text-decoration: underline;
+  color: #0056b3 !important;
+}
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 240px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 999;
+  background: #1e1e2f; /* dark background */
+  color: #f5f5f5;
+}
+
+.chat-header {
+  background: maroon;
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.chat-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-body.show {
+  max-height: 220px;
+  padding: 12px;
+}
+.chat-body p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.chat-body input {
+  padding: 8px;
+  font-size: 13px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 6px;
+  background: #2e2e3e;
+  color: white;
+  outline: none;
+}
+
+.chat-body input::placeholder {
+  color: #bbb;
+}
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.2);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.heartbeat-text {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.heartbeat-active {
+  animation: heartbeat 4.5s ease-in-out;
+}
+ </style>
 </head>
 <body><div id="loader" style="display: none;"></div>
 <div class="floating-bg">
@@ -614,21 +846,21 @@ body {
   <span></span>
   <span></span>
 </div><div class="top-strip">
-    <span>3rd EYE STUDIO</span>
-  </div>
+    
+  
 
   <div class="nav-buttons">
     <button onclick="showSection('home')" class="active">Home</button>
     <button onclick="showSection('about')">About</button>
     <button onclick="showSection('contact')">Contact</button>
-  </div>  
+  </div>  </div>
 <div class="logo-container">
   <img src="https://i.postimg.cc/GhXb05FD/IMG-20250406-162224-360.webp" alt="3RD I STUDIO Logo" class="rounded-logo">
 </div>
   <section id="home" class="active">
-    <p style="text-align:center; font-size: 32px; font-weight: 900; margin-bottom: 2px; margin-top: 4px;">
-      Tap to play 👇
-    </p>
+    <h2 id="tapToPlay" class="heartbeat-text">THIRD  EYE  STUDIO</h2>
+     
+    
     <div class="embed-container">
   <iframe 
     src="https://streamable.com/e/wj4mqb?autoplay=1&muted=1" 
@@ -693,6 +925,52 @@ body {
       <button type="submit">Send</button>
     </form>
   </div>
+  
+      <div class="payment-wrapper">
+  <div class="payment-container">
+    <h2>MAKE A PAYMENT</h2>
+
+    <div class="price-details">
+      <p><strong>Video Editing:</strong> ₹20 per minute</p>
+      <p><strong>Photo Editing:</strong> ₹20 per photo</p>
+    </div>
+
+    <div class="calculator">
+      <label for="type">Choose Service:</label>
+      <select id="type">
+        <option value="video">Video Editing</option>
+        <option value="photo">Photo Editing</option>
+      </select>
+
+      <label for="quantity">Enter Duration (in minutes/photos):</label>
+      <input type="number" id="quantity" placeholder="e.g., 5" min="1"/>
+
+      <button onclick="calculateTotal()">Calculate Cost</button>
+
+      <p class="total" id="totalCost">Total: ₹0</p>
+
+      <a id="payNow" href="#" target="_blank" class="pay-btn" style="display:none;">Pay Now</a>
+    </div>
+  </div>
+</div>
+    <!-- Your payment content here -->
+  <div class="step-guide">
+  <h3>&nbsp;&nbsp;&nbsp; UPLOAD SCREENSHOT</h3>
+
+  <ol>
+    <li>
+      <strong>Step 1:</strong> 
+      <a href="https://postimages.org/" target="_blank" class="upload-link">Post Here</a> to upload your payment screenshot.
+    </li>
+    <li>
+      <strong>Step 2:</strong> After uploading, copy the <strong>Direct Link</strong> provided.
+    </li>
+    <li>
+      <strong>Step 3:</strong> Send that direct link to us on WhatsApp at 
+      <a href="https://wa.me/919235276166" target="_blank" class="whatsapp-link">+91 XXXXXXXXXX</a>
+    </li>
+  </ol>
+</div>
 </section>
   <footer>
     &copy; 2025 3RD I STUDIO. All rights reserved.
@@ -758,6 +1036,38 @@ function showSurprise() {
     text.style.display = 'block';
   }, 600); // Wait for box animation to finish
 }
+</script><script>function calculateTotal() {
+  const type = document.getElementById('type').value;
+  const quantity = parseInt(document.getElementById('quantity').value);
+  if (!quantity || quantity < 1) return alert("Please enter a valid quantity.");
+
+  const price = 20;
+  const total = price * quantity;
+
+  document.getElementById('totalCost').textContent = `Total: ₹${total}`;
+
+  const upiLink = `upi://pay?pa=drvsinghvestige@ibl&pn=3RD%20I%20STUDIO&am=${total}&cu=INR&tn=Editing%20Payment`;
+  const payBtn = document.getElementById('payNow');
+  payBtn.href = upiLink;
+  payBtn.style.display = 'inline-block';
+}</script><div class="chatbot-container">
+  <div class="chat-header">Need Help?</div>
+  <div class="chat-body">
+    <p>Hi! How can I help you?</p>
+    <input type="text" placeholder="Type your message...">
+  </div>
+</div> <script>
+  function toggleChat() {
+    const chat = document.getElementById('chatBody');
+    chat.style.display = chat.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script><script>
+  const chatHeader = document.querySelector('.chat-header');
+  const chatBody = document.querySelector('.chat-body');
+
+  chatHeader.addEventListener('click', () => {
+    chatBody.classList.toggle('show');
+  });
 </script>
 </body>
-</html>
+  </html>
