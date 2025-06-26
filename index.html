@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Burbank Custom Font -->
+<link href="https://fonts.cdnfonts.com/css/burbank-big-condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -116,7 +120,6 @@
   font-size: 1.1rem;
   color: #333;
 }
-
 @keyframes heartbeat {
   0% {
     transform: scale(1);
@@ -137,31 +140,7 @@
     transform: scale(1);
   }
 }
-      .gift-card-container {
-  width: 300px;
-  margin: 60px auto;
-  text-align: center;
-  cursor: pointer;
-  font-family: 'Lora', serif;
-  perspective: 1000px;
-  user-select: none;
-}
-
-.gift-box {
-  background: linear-gradient(135deg, #f39c12, #e67e22);
-  color: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  font-size: 1.5rem;
-  transition: transform 0.4s ease;
-}
-
-.gift-card-container.exploded .gift-box {
-  animation: explode 0.6s forwards;
-}
-
-    /* Your original styles remain unchanged */
+        /* Your original styles remain unchanged */
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -194,12 +173,12 @@
 .nav-buttons button {
   background-color: transparent;
   color: #f5f5dc; /* cream text */
-  border: 2px solid #f5f5dc; /* cream border */
+  border: 1px solid #f5f5dc; /* cream border */
   border-radius: 20px;
   padding: 8px 18px;
   margin: 5px;
   cursor: pointer;
-  font-weight: bold;
+  
   font-size: 16px;
   transition: all 0.3s ease;
 }
@@ -388,7 +367,7 @@ body {
   background-color: white;
   color: #000; /* force black text */
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 2px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }#get-in-touch {
   text-align: center;
@@ -398,7 +377,6 @@ body {
   margin: 40px 0 20px;
   animation: heartbeat 2.5s infinite;
 }
-
 @keyframes heartbeat {
   0% {
     transform: scale(1);
@@ -835,7 +813,340 @@ body {
 .heartbeat-active {
   animation: heartbeat 4.5s ease-in-out;
 }
- </style>
+.qr-discount {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.qr-discount h3 {
+  font-size: 30px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.qr-img {
+  display: block;              /* Ensures it behaves like a block */
+  margin: 0 auto 15px auto;    /* Auto left/right centers it */
+  width: 300px;
+  height: 300px;
+  
+}
+.qr-discount input {
+  padding: 10px;
+  width: 60%;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+}
+
+.qr-discount button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #2c5364;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+.discount-msg {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+} .scroll-reminder-line {
+  background-color: #d0f0c0;
+  color: #2e7d32;
+  font-weight: 600;
+  font-family: 'Lora', serif;
+  text-align: center;
+  padding: 10px 16px;
+  border-left: 6px solid #27ae60;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  animation: blinkFade 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.scroll-reminder-line {
+  color: #00b894; /* Light green */
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: 'Lora', serif;
+  margin: 25px auto;
+  animation: heartbeat 1.5s 4;
+  display: inline-block;
+}.testimonials {
+  padding: 60px 20px;
+  background: #f5f5f5;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+.review-embed-container {
+ margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  background: transparent;  /* ✅ Make sure it's transparent */
+  box-shadow: none;         /* ✅ Remove any shadow */
+  padding: 0;               /* ✅ Remove extra spacing */
+  border: none;             /* ✅ Remove any border */
+}
+
+.review-embed-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;  /* ✅ Optional: try this if Jotform allows */
+}
+
+.overlay-solid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  font-family: 'Poppins', sans-serif;
+  color: #2c5364; /* Match your brand */
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}/* Universal button tap animation */
+button, .pay-btn, .text {
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active,
+.pay-btn:active,
+.text:active {
+  transform: scale(0.95); /* Slight shrink on tap */
+}/* IMPORT FONT FOR HEADINGS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+/* GALLERY CONTAINER with GRAPH PAPER BACKGROUND */
+.gallery-container {
+  margin-top: 80px;
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  background-image: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.25) 1px, transparent 1px);
+  background-size: 25px 25px;
+  text-align: center;
+}
+
+/* HEADING STYLING */
+.gallery-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  color: black;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* IMAGE GRID + ANIMATION */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* INDIVIDUAL IMAGE STYLE */
+.image-grid img {
+  width: 250px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* FADE-IN ANIMATION KEYFRAMES */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.diy {
+  border-radius: 1000px;
+  max-width: 90%;
+  height: auto;
+  display: inline-block;
+}
+.about-us-vibe {
+  background: #fff;
+  padding: 50px 20px;
+  color: #2c2c2c;
+  font-family: 'Righteous', sans-serif;
+}
+
+/* Main Heading */
+.about-title {
+  text-align: center;
+  font-size: 56px;
+  color: #5a2c04; /* Maroonish */
+  margin-bottom: 40px;
+  font-family: 'Burbank Big Condensed', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Founders Card Wrapper */
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Individual Founder Card */
+.founder-profile {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 360px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  font-family: 'Righteous', sans-serif;
+}
+
+.founder-profile:hover {
+  transform: translateY(-10px);
+}
+
+/* Founder Images */
+.founder-profile img {
+  width: 220px;
+  height: 220px;
+  border-radius: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #5a2c04;
+}
+
+/* Name */
+.founder-profile h3 {
+  margin: 10px 0 5px;
+  font-size: 32px;
+  color: maroon;
+  font-family: 'Burbank Big Condensed', sans-serif;
+}
+
+/* Role under name */
+.founder-profile .role {
+  font-size: 18px;
+  color: blue;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Righteous', sans-serif;
+}
+
+/* Bio Text */
+.founder-profile .bio {
+  font-size: 20px;
+  line-height: 1.7;
+  font-family: 'Raleway', sans-serif;
+  color: black; font-weight: bold;
+}
+
+/* Mission & Quote Section */
+.about-mission-quote {
+  margin-top: 60px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Righteous', sans-serif;
+}
+
+.about-mission-quote h3 {
+  font-size: 48px;
+  color: #5a2c04;
+  margin-bottom: 15px;
+  font-family: 'Burbank Big Condensed', sans-serif;
+}
+
+.about-mission-quote p {
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 0 10px;
+}
+
+/* Quote Style */
+.about-mission-quote .quote {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  color: #5a2c04;
+  background: #ffe5b4;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-family: 'Righteous', sans-serif;
+}
+.gradient-text {
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(to right, pink, #4a00e0); /* Violet to Indigo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }</style>
 </head>
 <body><div id="loader" style="display: none;"></div>
 <div class="floating-bg">
@@ -858,45 +1169,103 @@ body {
   <img src="https://i.postimg.cc/GhXb05FD/IMG-20250406-162224-360.webp" alt="3RD I STUDIO Logo" class="rounded-logo">
 </div>
   <section id="home" class="active">
-    <h2 id="tapToPlay" class="heartbeat-text">THIRD  EYE  STUDIO</h2>
-     
-    
-    <div class="embed-container">
+  <h1 class="gradient-text">3RD EYE STUDIO</h1>
+
+  <!-- Embedded promo video -->
+  <div class="embed-container">
+    <iframe 
+      src="https://streamable.com/e/wj4mqb?autoplay=1&muted=1" 
+      frameborder="0" 
+      allow="autoplay; fullscreen" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Surprise box (you may toggle visibility with JS) -->
+  <div class="surprise-text" id="surpriseText">
+    Surprise! 🎉<br>Check out our featured offer!
+  </div>
+
+  <!-- Why Choose Us section -->
+  <div class="why-choose-card">
+    <h2 class="why-heading">WHY CHOOSE US</h2>
+    <ul>
+      <li>🎥 Expert-level editing with cinematic effects</li>
+      <li>⏳ Fast delivery without sacrificing quality</li>
+      <li>💡 Creative direction from concept to final cut</li>
+      <li>🎶 Music-synced video reels for high impact</li>
+      <li>📷 Photo edits that truly pop and stand out</li>
+      <li>🤝 Friendly and dedicated team you can trust</li>
+    </ul>
+  </div>
+<div style="text-align: center; margin-top: 30px;">
+  <img src="https://i.postimg.cc/mk0FLnrf/IMG-20250623-164902-removebg-preview.png" alt="Golden Logo Text" class="diy">
+</div>
+<div class="review-embed-container">
   <iframe 
-    src="https://streamable.com/e/wj4mqb?autoplay=1&muted=1" 
+    src="https://form.jotform.com/251722554747462" 
+    width="100%" 
+    height="800" 
     frameborder="0" 
-    allow="autoplay; fullscreen" 
     allowfullscreen>
   </iframe>
-</div><div id="giftBox" class="gift-card-container" style="display: none;">
-  <div class="gift-container">
-  <div class="gift-box" onclick="showSurprise()">
-    <div class="ribbon"></div>
-    <div class="bow"></div>
+  <div class="overlay-solid">
+    <span class="overlay-text">📝 Powered by 3RD I STUDIO Reviews</span>
   </div>
-  <div class="surprise-text" id="surpriseText">Surprise! 🎉<br>Check out our featured offer!</div>
 </div>
-</div>
-<div class="why-choose-card">
-  <h2 class="why-heading">WHY CHOOSE US</h2>
-  <ul>
-    <li>🎥 Expert-level editing with cinematic effects</li>
-    <li>⏳ Fast delivery without sacrificing quality</li>
-    <li>💡 Creative direction from concept to final cut</li>
-    <li>🎶 Music-synced video reels for high impact</li>
-    <li>📷 Photo edits that truly pop and stand out</li>
-    <li>🤝 Friendly and dedicated team you can trust</li>
-  </ul>
-</div>
-    <div style="text-align: center; margin-top: 30px;">
-      <img src="https://i.postimg.cc/QtXF871r/Untitled-design-1.png" alt="Golden Logo Text" style="max-width: 90%; height: auto;">
-    </div>
 
-    <div class="subtitle">Photo editing | Video production | Short music video creation</div>
-  </section>  
 
+
+</div>
+
+ <div class="gallery-container">
+  <h2 class="gallery-heading">PORTFOLIO</h2>
+  <div class="image-grid">
+    <img src="https://i.postimg.cc/DwLGH5BJ/Editors-At-Work-Together-Now-e43b6f6b-525c-448b-b065-cbf5bfff9854.jpg" alt="Work 1">
+    <img src="https://i.postimg.cc/sgJPwknD/Untitled-design-2.png" alt="Work 2">
+    <img src="https://i.postimg.cc/Sx47LSfv/Untitled-design-3.png" alt="Work 3">
+    <img src="https://i.postimg.cc/jqGh5QwK/Untitled-design-4.png" alt="Work 4">
+  </div>
+</div></section>
   <section id="about">
     <h2 style="text-align:center;">About Us</h2>
+  
+<div class="about-us-vibe">
+  <h2 class="about-title">MEET THE FOUNDERS</h2>
+
+  <div class="about-cards">
+    <!-- Sarvesh First -->
+    <div class="founder-profile">
+      <img src="https://i.postimg.cc/L5K3m5zS/IMG-20250406-190216-2.jpg" alt="Sarvesh Tripathi">
+      <h3>SARVESH TRIPATHI</h3>
+      <p class="role">Co-Founder, Scriptwriter & Rapper</p>
+      <p class="bio">
+        Sarvesh is the expressive force behind 3RD I STUDIO. A passionate scriptwriter, gifted rapper, and bold actor, he channels real emotion into every performance. With a unique taste for raw storytelling and rhythm, he pens down scripts that strike deep. He believes in creating a platform where talent rises without the privilege of nepotism. His musical journey is not just about beats — it’s about voice, truth, and revolution. Together with Abhinav, he’s crafting a legacy that speaks louder than words.
+      </p>
+    </div>
+
+    <!-- Abhinav Second -->
+    <div class="founder-profile">
+      <img src="https://i.postimg.cc/9f78G6XL/IMG-20250624-183745.jpg" alt="Abhinav Singh">
+      <h3>ABHINAV SINGH</h3>
+      <p class="role">Co-Founder, Creative Leader and Develepor</p>
+      <p class="bio">
+        Abhinav is the creative soul of 3RD I STUDIO. From crafting cinematic edits to designing digital interfaces, he’s the tech-savvy director behind the screen. Whether it's visual design, CapCut editing, Photoshop creativity, or app development, he masters every step. His vision isn't just about editing — it's about building a future where creativity meets innovation. A dreamer, doer, and developer — all before turning 18. His motto? <strong>"live today, tomorrow is unpredictable."</strong>
+      </p>
+    </div>
+  </div>
+
+  <div class="about-mission-quote">
+    <h3>OUR MISSION</h3>
+    <p>
+      Our mission is to build a cutting-edge creative and app production company — a haven for raw, real talent. 3RD I STUDIO stands for passion without privilege. We aim to create an ecosystem that gives every local artist the chance to shine, without filters, without fakeness. With dreams in our hearts and skills in our hands, we’re assembling a powerful team of editors called <strong>“The 3RD EYE Editors”</strong> — young creators shaping the future before crossing 18.
+    </p>
+    <div class="quote">
+      “live today💞, tomorrow is unpredictable.”
+    </div>
+  </div>
+</div>
+  
     <div class="about-box">
       Welcome to <strong>3RD I STUDIO</strong>, where we blend creativity with technology. Our services bring out the artistic soul of your visuals:
       <ul>
@@ -945,13 +1314,31 @@ body {
       <label for="quantity">Enter Duration (in minutes/photos):</label>
       <input type="number" id="quantity" placeholder="e.g., 5" min="1"/>
 
-      <button onclick="calculateTotal()">Calculate Cost</button>
+      <button onclick="calculateTotal()">Calculate Cost</button>      <div class="scroll-reminder-line">
+  📌 Scroll down to get your coupon code
+</div>
+
+<div style="margin-top: 10px;">
+  <input type="text" id="discountCode" placeholder="Enter Discount Code" style="padding: 8px; border-radius: 6px; width: 70%; margin-bottom: 10px;" />
+  <button onclick="applyDiscount()" style="padding: 8px 12px; background-color: #2c5364; color: white; border: none; border-radius: 6px; cursor: pointer;">
+    Apply Discount
+  </button>
+  <div id="discountMsg" style="margin-top: 8px; font-weight: bold; color: green;"></div>
+</div>
 
       <p class="total" id="totalCost">Total: ₹0</p>
 
       <a id="payNow" href="#" target="_blank" class="pay-btn" style="display:none;">Pay Now</a>
     </div>
   </div>
+</div><div class="qr-discount">
+  <h3>Scan to Get 50% Off</h3>
+  <img src="https://i.postimg.cc/BQv54dcn/2025062119090392-removebg-preview.png" alt="Scan for 50% Discount" class="qr-img">
+
+  <label for="discountCode">Enter Discount Code:</label>
+
+
+  <p id="discountMsg" class="discount-msg"></p>
 </div>
     <!-- Your payment content here -->
   <div class="step-guide">
@@ -1022,20 +1409,6 @@ body {
       loader.style.display = "none";
     }, 1000);
   }
-</script><script>
-function showSurprise() {
-  const box = document.querySelector('.gift-box');
-  const text = document.getElementById('surpriseText');
-  
-  // Prevent re-animation if already triggered
-  if (text.style.display === 'block') return;
-
-  box.style.animation = 'explode 0.6s ease forwards';
-
-  setTimeout(() => {
-    text.style.display = 'block';
-  }, 600); // Wait for box animation to finish
-}
 </script><script>function calculateTotal() {
   const type = document.getElementById('type').value;
   const quantity = parseInt(document.getElementById('quantity').value);
@@ -1050,24 +1423,45 @@ function showSurprise() {
   const payBtn = document.getElementById('payNow');
   payBtn.href = upiLink;
   payBtn.style.display = 'inline-block';
-}</script><div class="chatbot-container">
-  <div class="chat-header">Need Help?</div>
-  <div class="chat-body">
-    <p>Hi! How can I help you?</p>
-    <input type="text" placeholder="Type your message...">
-  </div>
-</div> <script>
-  function toggleChat() {
-    const chat = document.getElementById('chatBody');
-    chat.style.display = chat.style.display === 'flex' ? 'none' : 'flex';
-  }
-</script><script>
-  const chatHeader = document.querySelector('.chat-header');
-  const chatBody = document.querySelector('.chat-body');
+}</script><script>
+  let discountApplied = false;
 
-  chatHeader.addEventListener('click', () => {
-    chatBody.classList.toggle('show');
-  });
+  function applyDiscount() {
+    const codeInput = document.getElementById("discountCode").value.trim();
+    const msg = document.getElementById("discountMsg");
+
+    if (codeInput === "OFF50" && !discountApplied) {
+      discountApplied = true;
+      msg.textContent = "✅ 50% Discount Applied!";
+      msg.style.color = "green";
+      calculateTotal(true);
+    } else if (discountApplied) {
+      msg.textContent = "✅ Discount already applied.";
+      msg.style.color = "green";
+    } else {
+      msg.textContent = "❌ Invalid Code";
+      msg.style.color = "red";
+    }
+  }
+
+  function calculateTotal(isDiscount = false) {
+    const type = document.getElementById("type").value;
+    const quantity = parseInt(document.getElementById("quantity").value);
+    if (!quantity || quantity < 1) return alert("Please enter a valid quantity.");
+
+    const price = 20;
+    let total = price * quantity;
+
+    if (discountApplied || isDiscount) {
+      total *= 0.5;
+    }
+
+    document.getElementById("totalCost").textContent = `Total: ₹${total}`;
+    const upiLink = `upi://pay?pa=drvsinghvestige@ibl&pn=3RD%20I%20STUDIO&am=${total}&cu=INR&tn=Editing%20Payment`;
+    const payBtn = document.getElementById("payNow");
+    payBtn.href = upiLink;
+    payBtn.style.display = "inline-block";
+  }
 </script>
 </body>
   </html>
