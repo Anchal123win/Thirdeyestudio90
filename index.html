@@ -1146,7 +1146,64 @@ button:active,
   background: linear-gradient(to right, pink, #4a00e0); /* Violet to Indigo */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  }</style>
+  }
+      .google-login-card {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.8s ease-in-out;
+  border: 3px solid maroon;
+}
+
+.google-logo {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.login-title {
+  font-size: 28px;
+  color: maroon;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.login-subtext {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.google-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid maroon;
+  color: maroon;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  width: 100%;
+}
+
+.google-login-btn:hover {
+  background-color: maroon;
+  color: white;
+}
+
+.btn-icon {
+  width: 22px;
+  margin-right: 10px;
+}
+      </style>
 </head>
 <body><div id="loader" style="display: none;"></div>
 <div class="floating-bg">
@@ -1185,6 +1242,28 @@ button:active,
   <div class="surprise-text" id="surpriseText">
     Surprise! 🎉<br>Check out our featured offer!
   </div>
+<div class="google-login-card">
+  <img src="https://i.postimg.cc/Kzfq6M5m/images-3.jpg" alt="Google Logo" class="google-logo" />
+  <h2 class="login-title">Sign in with Google</h2>
+  <p class="login-subtext">To continue to 3RD I STUDIO</p>
+
+  <!-- Google One Tap Login -->
+  <div id="g_id_onload"
+       data-client_id="610827628587-jrfko4sed82mjeiij5us8vdnc9fp6jrg.apps.googleusercontent.com"
+       data-login_uri="https://thirdeyestudio90.netlify.app/"
+       data-auto_prompt="false">
+  </div>
+
+  <!-- Google Sign-In Button -->
+  <div class="g_id_signin"
+       data-type="standard"
+       data-shape="rectangular"
+       data-theme="filled_blue"
+       data-text="signin_with"
+       data-size="large"
+       data-logo_alignment="left">
+  </div>
+</div>
 
   <!-- Why Choose Us section -->
   <div class="why-choose-card">
@@ -1462,6 +1541,6 @@ button:active,
     payBtn.href = upiLink;
     payBtn.style.display = "inline-block";
   }
-</script>
+</script><script src="https://accounts.google.com/gsi/client" async defer></script>
 </body>
   </html>
